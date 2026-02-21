@@ -10,6 +10,16 @@ import AppIntents
 nonisolated struct FoundationLabAppShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
+            intent: NavigateToTabIntent(),
+            phrases: [
+                "Open \(\.$destination) in \(.applicationName)",
+                "Show \(\.$destination) in \(.applicationName)",
+                "Go to \(\.$destination) in \(.applicationName)"
+            ],
+            shortTitle: "Open View",
+            systemImageName: "square.stack.3d.up"
+        )
+        AppShortcut(
             intent: OpenChatIntent(),
             phrases: [
                 "Open \(.applicationName) chat",

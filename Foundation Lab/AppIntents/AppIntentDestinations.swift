@@ -7,6 +7,36 @@
 
 import AppIntents
 
+// MARK: - Tab (main view) destination for NavigateToTabIntent
+enum TabDestination: String, AppEnum, CaseIterable {
+    case examples
+    case tools
+    case schemas
+    case languages
+    case settings
+
+    static var typeDisplayRepresentation = TypeDisplayRepresentation(name: "View")
+
+    static var caseDisplayRepresentations: [TabDestination: DisplayRepresentation] = [
+        .examples: DisplayRepresentation(title: "Examples"),
+        .tools: DisplayRepresentation(title: "Tools"),
+        .schemas: DisplayRepresentation(title: "Schemas"),
+        .languages: DisplayRepresentation(title: "Languages"),
+        .settings: DisplayRepresentation(title: "Settings")
+    ]
+
+    var tabSelection: TabSelection {
+        switch self {
+        case .examples: return .examples
+        case .tools: return .tools
+        case .schemas: return .schemas
+        case .languages: return .languages
+        case .settings: return .settings
+        }
+    }
+}
+
+// MARK: - Example destinations
 enum ExampleDestination: String, AppEnum, CaseIterable {
     case basicChat
     case journaling
