@@ -1,5 +1,102 @@
 # Foundation Models Framework Example
 
+## Developer setup
+
+- **Type:** Project
+
+- **Git:** [https://github.com/mattcassinelli/Foundation-Models-Framework-Example.git](https://github.com/mattcassinelli/Foundation-Models-Framework-Example.git)
+
+- **Recent commits:**
+  - `9f342a4` Save work (takedown audit) (2026-02-26)
+
+- **Structure (snapshot):**
+  ```
+  .DS_Store
+  .gitignore
+  .swiftlint.yml
+  Agents.md
+  CLAUDE.md
+  Foundation Lab/
+    AppIntents/
+      AppIntentDestinations.swift
+      FoundationLabAppShortcuts.swift
+      NavigateToTabIntent.swift
+      OpenChatIntent.swift
+      OpenExampleIntent.swift
+      OpenLanguageIntent.swift
+      OpenSchemaIntent.swift
+      OpenToolIntent.swift
+    Assets.xcassets/
+      AccentColor.colorset/
+      Contents.json
+    Extensions/
+      Array+BulletList.swift
+      Color+Extensions.swift
+      Transcript+TextExtraction.swift
+      Transcript+TokenCounting.swift
+    FoundationLab.entitlements
+    FoundationLabApp.swift
+    Health/
+      Models/
+      Repositories/
+      Services/
+      Tools/
+      ViewModels/
+      Views/
+    Localizable.xcstrings
+    Models/
+      AppConfiguration.swift
+      DataModels.swift
+      DefaultPrompts.swift
+      DynamicSchemaExampleType.swift
+      ExampleType.swift
+      FoundationModelsError.swift
+      NavigationCoordinator.swift
+      SamplingStrategy.swift
+      TabSelection.swift
+      VoiceState.swift
+    Playgrounds/
+      02_GettingStartedWithSessions/
+      03_GenerationOptionsAndSamplingControl/
+      08_BasicToolUse/
+      13_SupportedLanguagesAndInternationalization/
+      README.md
+    Services/
+      ConversationContextBuilder.swift
+      LanguageService.swift
+      RAGService.swift
+      ToolExecutor.swift
+    ViewModels/
+      ChatViewModel.swift
+      RAGChatViewModel.swift
+    Views/
+      AdaptiveNavigationView.swift
+      Chat/
+      Components/
+      Examples/
+      GenerationOptionsHelpers.swift
+      GenerationOptionsView.swift
+      Integrations/
+      Languages/
+      ModelUnavailableView.swift
+      SettingsView.swift
+      SidebarView.swift
+      Tools/
+    Voice/
+      Services/
+      State/
+      Views/
+      VoiceLogging.swift
+      VoiceView.swift
+      VoiceViewModel.swift
+  Foundation Lab.icon/
+    Assets/
+  ```
+
+- *Snapshot: 2026-02-27*
+
+
+
 
 <div align="center">
   <table>
